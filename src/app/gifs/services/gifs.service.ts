@@ -2,7 +2,6 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import type { Gifs, Data as Gif } from '../interfaces/gifs-response.interface';
 
-const GIPHY_API_KEY = 'EES1ibVYyEHIEHvCHvL3x3kYgwCIR1BZ'
 const LOCALSTORAGE_KEY_HISTORY = 'history'
 
 @Injectable({
