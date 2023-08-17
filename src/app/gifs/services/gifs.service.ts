@@ -1,8 +1,8 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.development';
 import type { Gifs, Data as Gif } from '../interfaces/gifs-response.interface';
 
-const GIPHY_API_KEY = 'EES1ibVYyEHIEHvCHvL3x3kYgwCIR1BZ'
 const LOCALSTORAGE_KEY_HISTORY = 'history'
 
 @Injectable({
@@ -51,7 +51,7 @@ export class GifsService{
         JSON.stringify(Array.from(this._tagsHistory)))
 
     const params = new HttpParams()
-          .set('api_key', GIPHY_API_KEY)
+          .set('api_key', environment.api_key)
           .set('q', tag)
           .set('limit', '10')
 

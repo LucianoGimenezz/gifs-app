@@ -1,0 +1,10 @@
+section {
+  overflow-x: hidden;
+  padding: 4px;
+}
+
+@media (min-width: 768px) {
+  section {
+    width: auto;
+  }
+}
